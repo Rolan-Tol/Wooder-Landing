@@ -24,6 +24,16 @@ body {
   background-color: #bea67c;
 }
 
+h2 {
+  font-family: ProximaBold;
+  font-size: 53px;
+}
+
+.desc {
+  font-family: Proximaregular;
+  font-size: 20px;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -329,4 +339,239 @@ body {
 .decor-text.f {
   top: 73%;
   left: 7%;
+}
+
+.cards-section {
+  margin: 200px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 250px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card:last-of-type {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.card-text-wrapper {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.card:last-of-type .card-text-wrapper {
+  text-align: end;
+}
+
+.card-text-wrapper .card-text {
+  width: 75%;
+  margin: 0 0 0 50px;
+  position: relative;
+}
+
+.card:last-of-type .card-text-wrapper .card-text {
+  width: 75%;
+  margin: 0 50px 0 0;
+}
+
+.card-text .title {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card:last-of-type .card-text .title {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-lines {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card:last-of-type .card-lines {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card-lines .line-1 {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin: 47px 0;
+}
+
+.card-lines .line-2 {
+  width: 50px;
+  height: 2px;
+  background-color: #bea67c;
+  margin: 15px 0 0 0;
+}
+
+.card-text .learn-more {
+  margin: 15px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: ProximaBold;
+  font-size: 20px;
+  position: relative;
+}
+
+.card-text .learn-more::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: #bea67c;
+  position: absolute;
+  top: 100%;
+}
+
+.card:last-of-type .card-text .learn-more::after {
+  content: "";
+  left: 60%;
+  right: 244px;
+}
+
+.card:last-of-type .card-text .learn-more {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.learn-more .learn-more-arrow {
+  width: 12%;
+  margin: 0 0 0 2%;
+}
+
+.card .card-image {
+  margin: 0 0 0 2%;
+}
+
+.card:last-of-type .card-image {
+  margin: 0 2% 0 0;
+}
+
+.cards .number-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 130%;
+  left: 0;
+}
+
+.cards .number-aside.second {
+  top: 145%;
+  right: -34%;
+}
+
+.number-aside .text {
+  font-family: ProximaBold;
+  font-size: 30px;
+  margin: 0 0 90px 0;
+}
+
+.number-aside .text .dot {
+  color: #bea67c;
+}
+
+.number-aside .line {
+  width: 5px;
+  height: 60px;
+  background-color: #bea67c;
 }

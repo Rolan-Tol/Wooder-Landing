@@ -21,6 +21,14 @@ body
 ::-webkit-scrollbar-thumb
     background-color: #bea67c
 
+h2
+    font-family: ProximaBold
+    font-size: 53px
+
+.desc
+    font-family: Proximaregular
+    font-size: 20px
+
 // Хедер
 
 .header
@@ -244,6 +252,150 @@ body
     top: 73%
     left: 7%
 
+// Блок с карточками
+
+.cards-section
+    margin: 200px 0 0 0 
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.cards
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.card
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: 0 0 250px 0
+    align-items: center
+
+.card:last-of-type
+    flex-direction: row-reverse
+
+.card-text-wrapper
+    width: 700px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
+    position: relative
+
+.card:last-of-type .card-text-wrapper
+    text-align: end
+
+.card-text-wrapper .card-text
+    width: 75%
+    margin: 0 0 0 50px
+    position: relative
+
+.card:last-of-type .card-text-wrapper .card-text
+    width: 75%
+    margin: 0 50px 0 0
+
+.card-text .title
+    margin: 20px 0 
+    display: flex
+    align-items: center
+    flex-direction: row
+
+.card:last-of-type .card-text .title
+    justify-content: flex-end
+
+.card-lines 
+    width: 25%
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    flex-direction: column
+
+.card:last-of-type .card-lines 
+    align-items: flex-start
+
+.card-lines .line-1
+    width: 100%
+    height: 3px
+    background-color: black
+    margin: 47px 0
+    
+.card-lines .line-2
+    width: 50px
+    height: 2px
+    background-color: #bea67c
+    margin: 15px 0 0 0
+    
+.card-text .learn-more
+    margin: 15px 0 0 0
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: row
+    font-family: ProximaBold
+    font-size: 20px
+    position: relative
+    
+
+.card-text .learn-more::after
+    content: ''
+    width: 48px
+    height: 3px
+    background-color: #bea67c
+    position: absolute
+    top: 100%
+
+.card:last-of-type .card-text .learn-more::after
+    content: ''
+    left: 60%
+    right: 244px
+
+.card:last-of-type .card-text .learn-more 
+    justify-content: flex-end
+
+.learn-more .learn-more-arrow
+    width: 12%
+    margin: 0 0 0 2%
+
+.card .card-image
+    margin: 0 0 0 2%
+
+.card:last-of-type .card-image
+    margin: 0 2% 0 0
+
+.cards .number-aside
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 130%
+    left: 0
+
+.cards .number-aside.second
+    top: 145%
+    right: -34%
+
+.number-aside .text
+    font-family: ProximaBold
+    font-size: 30px
+    margin: 0 0 90px 0
+
+.number-aside .text .dot
+    color: #bea67c
+
+.number-aside .line
+    width: 5px
+    height: 60px
+    background-color: #bea67c
+
+
+
+    
+
+    
+    
+    
 
 
 

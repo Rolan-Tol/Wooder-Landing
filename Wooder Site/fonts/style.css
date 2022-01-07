@@ -17,7 +17,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: #0e0e0e;
+  background-color: #ebebeb;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -31,7 +31,6 @@ body {
 h2 {
   font-family: ProximaBold;
   font-size: 53px;
-  letter-spacing: 3px;
 }
 
 h4 {
@@ -298,39 +297,8 @@ h4 {
       -ms-grid-row-align: center;
       align-self: center;
   width: 100px;
-  -webkit-animation: scroll-arrow 2s ease-in-out infinite;
-          animation: scroll-arrow 2s ease-in-out infinite;
 }
 
-@-webkit-keyframes scroll-arrow {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes scroll-arrow {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
 .scroll-arrow .text {
   font-family: ProximaBold;
   font-size: 16px;
@@ -343,10 +311,6 @@ h4 {
       align-self: center;
   justify-self: flex-start;
   letter-spacing: 2px;
-}
-
-.learmarrowjs .hover {
-  display: none;
 }
 
 .welcome-wrapper .number-aside, .welcome-wrapper .text-aside {
@@ -528,7 +492,7 @@ h4 {
   margin: 15px 0 0 0;
 }
 
-.card-text .learn-more, .about-heading .learn-more {
+.card-text .learn-more {
   margin: 15px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,37 +510,15 @@ h4 {
   font-family: ProximaBold;
   font-size: 20px;
   position: relative;
-  cursor: pointer;
 }
 
-.card-text .learn-more::after, .about-heading .learn-more::after {
+.card-text .learn-more::after {
   content: "";
   width: 48px;
   height: 3px;
   background-color: #bea67c;
   position: absolute;
   top: 100%;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-.card-text .learn-more.hover::after, .about-heading .learn-more.hover::after {
-  content: "";
-  width: 124px;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-.card-text .learn-more.hover, .about-heading .learn-more.hover {
-  color: #6d6d6d;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.card-text .learn-more, .about-heading .learn-more {
-  color: #000;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 
 .card:last-of-type .card-text .learn-more::after {
@@ -594,16 +536,6 @@ h4 {
 .learn-more .learn-more-arrow {
   width: 12%;
   margin: 0 0 0 2%;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-.learn-more-arrow.hover {
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  cursor: pointer;
 }
 
 .card .card-image {
@@ -717,39 +649,12 @@ h4 {
 .privilage .privilage-image {
   border-radius: 100%;
   margin: 0 0 30px 0;
-  position: relative;
 }
 
 .privilage-image .image {
   padding: 10px;
   border: 2px solid #d6d6d6;
   border-radius: 100%;
-}
-
-.privilage-image .play-circle {
-  width: 26%;
-  height: 26%;
-  border-radius: 100%;
-  background-color: rgba(190, 166, 124, 0.8);
-  position: absolute;
-  top: 38%;
-  left: 36%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.privilage-image .play-circle:hover {
-  background-color: rgba(190, 166, 124, 0.3);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-
-.play-circle .play-triangle {
-  position: absolute;
-  top: 32%;
-  left: 35%;
-  width: 25px;
 }
 
 .privilage .line {
@@ -806,7 +711,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 725px;
+  width: 680px;
   margin: 0 0 0 30px;
 }
 
@@ -825,18 +730,6 @@ h4 {
   padding: 14px 70px;
 }
 
-.description-heading .button-frame:hover {
-  border: 1px solid #adadad;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.description-heading .button-frame:not(:hover) {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
 .description-heading .button {
   font-family: ProximaBold;
   color: #fff;
@@ -849,17 +742,6 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.description-heading .button-frame a.button.hover {
-  color: #adadad;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.description-heading .button-frame a.button {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 
 .button .button-img {
@@ -939,15 +821,14 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0 0 0 80px;
-  position: relative;
+  margin: 0 0 0 30px;
 }
 
 .about-heading .desc {
@@ -981,37 +862,6 @@ h4 {
   background-color: #bea67c;
   position: absolute;
   top: 100%;
-}
-
-.about-heading .about-lines {
-  position: absolute;
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  top: 10%;
-  right: 105%;
-}
-
-.about-heading .about-lines .line-1 {
-  width: 100%;
-  height: 3px;
-  background-color: black;
-  margin: 47px 0;
-}
-
-.about-heading .about-lines .line-2 {
-  width: 50px;
-  height: 4px;
-  background-color: #bea67c;
-  margin: 40px 0 0 0;
 }
 
 .footer {

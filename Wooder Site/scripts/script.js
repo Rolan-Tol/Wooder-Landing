@@ -1,3 +1,8 @@
+imageWrapper = document.querySelector('.image-wrapper');
+imageWrapper.style.minHeight = screen.height + 'px';
+imageWrapper.style.Height = screen.height = 'px';
+console.log("Высота экрана:" + imageWrapper.style.minHeight)
+
 learnButton = document.getElementById('learnbutton');
 learnArrow = document.getElementById('learnarrow');
 learnText = document.getElementById('learntext');
@@ -69,3 +74,4 @@ watchVideoButton.onmouseover = function() {
 watchVideoButton.onmouseout = function() {
     watchVideoText.classList.remove('hover')
 }
+

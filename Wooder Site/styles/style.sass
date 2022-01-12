@@ -70,6 +70,29 @@ h4
         font-size: 14px
     .desc
         font-size: 12px
+
+@media all and ( max-width: 500px )
+    h1
+        font-size: 70px !important
+        letter-spacing: 10px !important
+
+@media all and ( max-width: 430px )
+    h1
+        font-size: 58px !important
+    h2
+        font-size: 25px
+    h4
+        font-size: 12px
+    .desc
+        font-size: 10px
+
+@media all and ( max-width: 350px )
+    h2
+        font-size: 24px
+    
+    
+    
+    
     
     
     
@@ -88,14 +111,21 @@ h4
 @media all and ( max-width: 900px )
     .header
         grid-template-columns: 1fr 1fr 1fr
-    
 
+@media all and ( max-width: 430px )
+    .header
+        font-size: 11px
+    
 .header .header-title
     justify-self: center 
     font-size: 35px
     letter-spacing: 6px
     margin: 0
     position: relative
+
+@media all and ( max-width: 430px )
+    .header .header-title
+        font-size: 28px
 
 .header .title-decor
     width: 57px
@@ -105,6 +135,14 @@ h4
     position: absolute
     top: 18px
     left: 39px
+
+@media all and ( max-width: 430px )
+    .header .title-decor
+        width: 47px
+        height: 4px
+        top: 15px
+        left: 32px
+    
 
 .header-menu 
     display: flex
@@ -137,12 +175,15 @@ h4
     display: flex
     flex-direction: row
 
-
 .burger-lines
     box-sizing: border-box
     width: 35px
     height: 100%
     position: relative
+
+@media all and ( max-width: 430px )
+    .burger-lines
+        width: 25px
 
 .burger-span:before
     content: ''
@@ -154,6 +195,10 @@ h4
     position: absolute
     bottom: 300%
 
+@media all and ( max-width: 430px )
+    .burger-span:before
+        height: 2px
+
 .burger-span
     display: block
     width: 100%
@@ -162,6 +207,10 @@ h4
     z-index: 3
     position: absolute
     top: 50%
+
+@media all and ( max-width: 430px )
+    .burger-span
+        height: 2px
 
 .burger-span:after
     content: ''
@@ -173,13 +222,34 @@ h4
     position: absolute
     top: 300%
 
+@media all and ( max-width: 430px )
+    .burger-span:after
+        height: 2px
+
 .burger .burger-title
     margin: 0 3%
     align-self: center
 
+@media all and ( max-width: 430px )
+    .burger .burger-title
+        font-size: 0
+    
+
 .icon
     align-self: center
     justify-self: end
+
+.icon-img
+    width: 25px
+    height: 25px
+
+@media all and ( max-width: 430px )
+    .icon-img
+        width: 20px
+        height: 20px
+    
+
+    
 
 // Приветсвенный блок
 
@@ -310,6 +380,11 @@ h4
     justify-self: flex-start
     letter-spacing: 2px
 
+
+@media all and ( max-width: 768px )
+    .scroll-arrow .mouse, .scroll-arrow .arrow
+        display: none    
+
 .welcome-wrapper .number-aside, .welcome-wrapper .text-aside
     font-family: ProximaBold
     color: #bea67c
@@ -385,7 +460,26 @@ h4
         font-size: 2500%
     .decor-text.f
         left: 1%
+        top: -90%
+
+@media all and ( max-width: 576px )
+    .decor-text.f, .decor-text.v
+        font-size: 2000%
+    .decor-text.f
+        left: 0
+        top: 68%
+    .decor-text.v
+        top: -70%
+
+@media all and ( max-width: 430px )
+    .decor-text.f, .decor-text.v
+        font-size: 1700%
+    .decor-text.f
+        left: 0
         top: 130%
+
+
+    
     
 
 
@@ -400,6 +494,10 @@ h4
     flex-direction: column
     justify-content: center
 
+@media all and ( max-width: 768px )
+    .cards-section
+        margin: 100px 0 0 0    
+
 .cards
     display: flex
     flex-direction: column
@@ -411,6 +509,11 @@ h4
     justify-content: center
     margin: 0 0 250px 0
     align-items: center
+
+@media all and ( max-width: 768px )
+    .card
+        margin: 0 0 100px 0
+    
     
 .card:last-of-type
     flex-direction: row-reverse
@@ -445,6 +548,10 @@ h4
 @media all and ( max-width: 576px )
     .card-text-wrapper
         width: 400px
+
+@media all and ( max-width: 430px )
+    .card-text-wrapper 
+        width: 300px    
     
 .card:last-of-type .card-text-wrapper
     text-align: end
@@ -463,13 +570,12 @@ h4
         justify-content: flex-end
 
 
-    
        
     
 
 
 .card-text-wrapper .card-text
-    width: 75%
+    width: 100%
     margin: 0 0 0 50px
     position: relative
 
@@ -501,6 +607,11 @@ h4
 @media all and ( max-width: 576px )
     .card-text .desc
         width: 400px
+
+@media all and ( max-width: 430px )
+    .card-text .desc
+        width: 300px
+    
     
 
 .card:last-of-type .card-text .title
@@ -563,6 +674,10 @@ h4
     width: 124px
     transition: 1s ease-in-out
 
+@media all and ( max-width: 768px )
+    .card-text .learn-more.hover::after, .about-heading .learn-more.hover::after
+        width: 101px
+
 .card-text .learn-more.hover, .about-heading .learn-more.hover
     color: #6d6d6d
     transition: 0.5s ease-in-out
@@ -576,6 +691,24 @@ h4
     left: 60%
     right: 244px
 
+@media all and ( max-width: 1410px )
+    .card:last-of-type .card-text .learn-more::after
+        left: 62.4%
+
+@media all and ( max-width: 768px )
+    .card:last-of-type .card-text .learn-more::after
+        left: 64.6%
+    
+@media all and ( max-width: 576px )
+    .card:last-of-type .card-text .learn-more::after
+        left: 61%
+
+@media all and ( max-width: 430px )
+    .card:last-of-type .card-text .learn-more::after
+        left: 53%
+    
+    
+
 .card:last-of-type .card-text .learn-more 
     justify-content: flex-end
 
@@ -583,7 +716,7 @@ h4
     width: 12%
     margin: 0 0 0 2%
     transition: 1s ease-in-out
-
+    
 .learn-more-arrow.hover 
     transform: translateX(25px)
     transition: 1s ease-in-out
@@ -603,6 +736,10 @@ h4
 @media all and ( max-width: 576px )
     .card .card-image
         width: 400px
+
+@media all and ( max-width: 430px )
+    .card .card-image
+        width: 310px
     
     
 
@@ -632,7 +769,7 @@ h4
         left: -7%
 @media all and ( max-width: 900px )
     .cards .number-aside
-        left: 4%
+        left: -4%
 @media all and ( max-width: 768px )
     .cards .number-aside
         display: none
@@ -674,9 +811,12 @@ h4
 // Блок с преимуществами
 
 .privilages-section
-    margin: 0 0 130px 0
+    margin: 0 0 200px 0
 
-
+@media all and ( max-width: 768px )
+    .privilages-section
+        margin: 0 0 100px 0
+    
 .privilages-heading
     display: flex
     align-items: center
@@ -694,6 +834,12 @@ h4
 
 .privilages-heading .desc
     white-space: pre-wrap
+
+@media all and ( max-width: 350px )
+    .privilages-heading .desc
+        white-space: normal
+        text-align: center
+    
 
 .privilages 
     display: flex
@@ -728,6 +874,12 @@ h4
 @media all and ( max-width: 900px )
     .privilage-image .image
         width: 215px
+        margin: 0 0 20px 0
+
+@media all and ( max-width: 430px )
+    .privilage-image .image
+        width: 175px
+    
     
 .privilage-image .play-circle
     width: 26%
@@ -736,8 +888,16 @@ h4
     background-color: rgba(190, 166, 124, 0.8)
     position: absolute
     top: 38%
-    left: 36%
+    left: 37%
     transition: 0.5s ease-in-out
+
+@media all and ( max-width: 900px )
+    .privilage-image .play-circle
+        width: 29%
+        height: 26%
+        top: 34%
+        left: 35%
+    
 
 .privilage-image .play-circle:hover
     background-color: rgba(190, 166, 124, 0.3)
@@ -749,6 +909,13 @@ h4
     top: 32%
     left: 35%
     width: 25px
+
+@media all and ( max-width: 430px )
+    .play-circle .play-triangle
+        top: 33%
+        left: 32%
+        width: 21px
+    
 
 .privilage .line
     width: 15%
@@ -765,6 +932,9 @@ h4
 @media all and ( max-width: 900px )
     .privilage .line
         height: 2px   
+
+
+    
 
     
 
@@ -840,6 +1010,11 @@ h4
 @media all and ( max-width: 576px )
     .description-heading
         width: 400px    
+
+@media all and ( max-width: 430px )
+    .description-heading
+        width: 310px
+    
     
 
 .description-heading .title
@@ -863,6 +1038,10 @@ h4
     .description-heading .desc
         margin: 0 0 60px 0
     
+@media all and ( max-width: 430px )
+    .description-heading .desc
+        width: 310px
+    
     
 
 .description-heading .button-frame
@@ -880,6 +1059,11 @@ h4
 @media all and ( max-width: 576px )
     .description-heading .button-frame
         width: 320px
+
+@media all and ( max-width: 430px )
+    .description-heading .button-frame
+        width: 240px
+    
     
 
 .description-heading .button-frame:hover
@@ -956,6 +1140,12 @@ h4
 @media all and ( max-width: 768px )
     .description-frame .play-img
         width: 80%
+
+@media all and ( max-width: 430px )
+    .description-frame .play-img
+        width: 110%
+        left: 22%
+    
     
     
     
@@ -966,7 +1156,12 @@ h4
     display: flex
     justify-content: center
     align-items: center
-    margin: 100px 0
+    margin: 200px 0
+
+@media all and ( max-width: 768px )
+    .about-section
+        margin: 100px 0
+    
 
 .about-wrapper
     display: flex
@@ -985,6 +1180,10 @@ h4
 @media all and ( max-width: 576px )
     .about-wrapper .about-image
         width: 400px
+
+@media all and ( max-width: 430px )
+    .about-wrapper .about-image
+        width: 300px
     
 
 .about-wrapper .about-heading
@@ -1002,12 +1201,22 @@ h4
     .about-wrapper .about-heading
         width: 400px
 
+@media all and ( max-width: 430px )
+    .about-wrapper .about-heading
+        width: 300px
+    
+
 .about-heading .desc
     width: 440px
 
 @media all and ( max-width: 576px )
     .about-heading .desc
         width: 400px
+        
+@media all and ( max-width: 430px )
+    .about-heading .desc
+        width: 300px
+    
 
 .about-heading .learn-more
     margin: 15px 0 0 0
@@ -1019,7 +1228,7 @@ h4
     font-size: 20px
     position: relative
 
-@media all and ( max-width: 625px )
+@media all and ( max-width: 768px )
     .about-heading .learn-more
         font-size: 16px
     

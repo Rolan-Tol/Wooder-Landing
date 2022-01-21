@@ -13,6 +13,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -337,9 +338,9 @@ h4 {
   position: relative;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1410px) {
   .welcome-section {
-    margin-top: 26%;
+    margin-top: 7%;
   }
 }
 @media all and (max-width: 1200px) {
@@ -347,9 +348,14 @@ h4 {
     margin-top: 17%;
   }
 }
+@media all and (max-width: 900px) {
+  .welcome-section {
+    margin-top: 26%;
+  }
+}
 @media all and (max-width: 768px) {
   .welcome-section {
-    margin-top: 30%;
+    margin-top: 20%;
   }
 }
 .welcome-wrapper {
@@ -502,6 +508,11 @@ h4 {
             transform: translateX(0);
   }
 }
+@media all and (max-width: 768px) {
+  .scroll-arrow .mouse, .scroll-arrow .arrow {
+    display: none;
+  }
+}
 .scroll-arrow .text {
   font-family: ProximaBold;
   font-size: 16px;
@@ -516,11 +527,6 @@ h4 {
   letter-spacing: 2px;
 }
 
-@media all and (max-width: 768px) {
-  .scroll-arrow .mouse, .scroll-arrow .arrow {
-    display: none;
-  }
-}
 .welcome-wrapper .number-aside, .welcome-wrapper .text-aside {
   font-family: ProximaBold;
   color: #bea67c;
@@ -660,6 +666,7 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 @media all and (max-width: 768px) {
@@ -1122,6 +1129,7 @@ h4 {
 
 .privilages-section {
   margin: 0 0 200px 0;
+  overflow: hidden;
 }
 
 @media all and (max-width: 768px) {
@@ -1291,7 +1299,7 @@ h4 {
   }
 }
 .description-section {
-  background-image: url(../images/fourth-block/rectangle.png);
+  background-image: url(../images/fourth-block/rectangle.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat no-repeat;
@@ -1578,6 +1586,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   margin: 200px 0;
+  overflow: hidden;
 }
 
 @media all and (max-width: 768px) {
